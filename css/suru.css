@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+  background: #000;
+  color: #000;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+.header {
+  height: 1.55rem;
+  position: relative;
+  padding-left: 0.18rem;
+  padding-right: 0.18rem;
+  padding-top: 0.9rem;
+}
+
+.header:after {
+  content: "";
+  border-bottom: 0.01rem solid #ccc;
+  display: block;
+  width: 1.88rem;
+  margin-top: 0.14rem;
+}
+
+.header .headerin {
+  height: 0.5rem;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  font-size: 0.5rem;
+}
+
+.header .headerin input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 0.5rem;
+  width: 100%;
+  font-size: 0.5rem;
+  outline: none;
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.header ul {
+  position: absolute;
+  height: 0.18rem;
+  right: 0.18rem;
+  top: 0.42rem;
+}
+
+.header ul li {
+  width: 0.18rem;
+  height: 0.18rem;
+  float: left;
+  border-radius: 50%;
+  margin-left: 0.08rem;
+}
+
+.header ul li:nth-of-type(1) {
+  background: #29abe2;
+}
+
+.header ul li:nth-of-type(2) {
+  background: #009949;
+}
+
+.header ul li:nth-of-type(3) {
+  background: #d50f25;
+}
+
+.header ul li:nth-of-type(4) {
+  background: #eeb211;
+}
+
+.listbox {
+  padding-left: 0.24rem;
+  padding-right: 0.24rem;
+}
+
+.listbox .listname {
+  width: 100%;
+  position: relative;
+  margin-top: 0.15rem;
+}
+
+.listbox .listname .name {
+  width: 100%;
+  height: 1.07rem;
+  background: #009949;
+  position: relative;
+  background: linear-gradient(135deg, transparent 0.2rem, #009949 0);
+}
+
+.listbox .listname .name:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.4)) 100% 0 no-repeat;
+  width: 0.2828rem;
+  height: 0.2828rem;
+  transform: translateY(0) rotate(90deg);
+  border-bottom-left-radius: inherit;
+  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.15);
+}
+
+.listbox .listname .name .onebox {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  font-size: 0.38rem;
+  color: #fff;
+}
+
+.listbox .listname .name .onebox .one {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0;
+  outline: none;
+  width: 90%;
+  padding: 0.2rem;
+  font-size: 0.38rem;
+  color: #fff;
+  height: 100%;
+  background: transparent;
+}
+
+.listbox .listname .name .click {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1.07rem;
+  width: 10%;
+  z-index: 1;
+  background: #009949;
+}
+
+.listbox .listname .name .click:before {
+  content: "";
+  display: block;
+  border-left: 0.05rem solid #26a864;
+  height: 0.75rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.listbox .listname .name .click .line {
+  width: 0.42rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.listbox .listname .name .click .line div {
+  width: 100%;
+  height: 0.61rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.listbox .listname .name .click .line div span {
+  box-sizing: content-box;
+  height: 0.15rem;
+  margin-top: 0.15rem;
+  display: block;
+  border-bottom: 0.04rem solid #fff;
+  border-top: 0.04rem solid #fff;
+}
+
+.listbox .listname .name .click .line div span:nth-of-type(1) {
+  margin: 0;
+}
+
+.listbox .listname .list {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.listbox .listname .list .two {
+  position: relative;
+  height: 0.93rem;
+  outline: none;
+  background: #33aa6c;
+  border: 0;
+  color: #fff;
+  font-size: 0.32rem;
+  width: 100%;
+  padding: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+.listbox .listname .add {
+  width: 92%;
+  height: 0.9rem;
+  text-align: center;
+  line-height: 0.82rem;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  color: #fff;
+  border: 0.04rem dashed #999;
+}
+
+.done {
+  position: relative;
+}
+
+.done input {
+  text-decoration: line-through;
+}
+
+.done .dd {
+  width: 100%;
+  height: 1.07rem;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: red;
+}
